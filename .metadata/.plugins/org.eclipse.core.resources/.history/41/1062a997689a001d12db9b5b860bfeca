@@ -1,0 +1,33 @@
+package spring23.ServerProgrammingWeek12.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class DemoController {
+	
+	//index
+	@RequestMapping("index")
+	@ResponseBody
+	public String returnIndexPage() {
+		return "This is the main page";
+	}
+	
+	//contact
+	@RequestMapping("contact")
+	@ResponseBody
+	public String returnContactPage() {
+		return "This is the contact page";
+	}
+
+	
+
+	//nimi ja ikä
+	@RequestMapping("nimijaika") //urliin http://localhost:8080/nimijaika?nimesi=peikko&ikasi=10
+	@ResponseBody
+	public String nimiJaIka(@RequestParam(name="nimesi", required=false, defaultValue = "Ole sitten nimetön") String nimi, //request parametrit erotellaan pilkulla
+			@RequestParam(name="ikasi") int ika) { 
+		return "Heipä hei " + nimi + " "+ika+" vuotta!"; 
+	}  
+}
