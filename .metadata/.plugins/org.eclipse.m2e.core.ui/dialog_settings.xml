@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Käyttäjä\eclipse02_serverprogramming\HelloAppWeek2"/>
 			<item value="C:\Users\Käyttäjä\eclipse02_serverprogramming\ServerProgrammingWeek1-2"/>
 		</list>
 		<list key="projectNameTemplate">

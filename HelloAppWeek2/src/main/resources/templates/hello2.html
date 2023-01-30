@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<title>Hello</title>
+</head>
+<body>
+	<div>
+		<!-- <p th:text="${nimi}"/>
+		<p th:text="'Hello ' + ${nimi} + ', ' + ${ika} + ' vuotta!'" />                   -->
+		
+		<!-- <b>Ikävertailut</b>
+		
+		<div th:if="${ika} &gt; 18">Olet yli 18 vuotta</div>
+		<div th:if="${ika} &lt; 18">Olet alle 18 vuotta</div>
+		
+		<br>
+		
+		<p>
+		<b>Toinen tapa</b>
+		</p>                                                         -->
+		
+		<div th:if="${ika} &gt; 18">
+			<p th:text="'Welcome ' + ${nimi} + '!'" /> 
+		</div>
+		
+		<div th:if="${ika} &lt; 17">
+			<p th:text="'You are too young ' + ${nimi} + '!'" />
+		</div>		
+		
+	</div>
+</body>
+</html>

@@ -1,6 +1,0 @@
-package spring23.ServerProgrammingWeek12.web;
-
-@Controller
-public class DemoController {
-
-}

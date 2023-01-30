@@ -1,8 +1,0 @@
-package spring23.ServerProgrammingWeek12.web;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class DemoController {
-
-}
