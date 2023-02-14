@@ -7,8 +7,9 @@
 <body>
 	<h1>Edit car</h1>
 	<div>
-	<form th:object="${editBook}" th:action="@{/saveBook}" action="#" method="post">
-		  	<input type="hidden" id="id" th:field="*{id}" />
+	<form th:object="${editBook}" th:action="@{/saveBook}" action="#" method="post"> 	 					<!-- Tässä menee @{/saveBook} -->
+	
+		  	<input type="hidden" id="id" th:field="*{id}" />												<!-- muokatessa id:n täytyy mennä mukana backendin puolelle, ettei luoda uutta bookia -->
 		  	<div>
 		  	<label>Title</label>
 			<input type="text" th:field="*{title}" />
