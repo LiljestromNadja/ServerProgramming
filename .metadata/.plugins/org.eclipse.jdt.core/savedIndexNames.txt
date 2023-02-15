@@ -3,6 +3,7 @@ INDEX VERSION 1.131+C:\Users\Käyttäjä\eclipse02_serverprogramming\.metadata\.plu
 836521132.index
 953434969.index
 3112153335.index
+2387925951.index
 2151704407.index
 1753275341.index
 1174024515.index
@@ -17,7 +18,6 @@ INDEX VERSION 1.131+C:\Users\Käyttäjä\eclipse02_serverprogramming\.metadata\.plu
 865321519.index
 993138222.index
 2998357958.index
-1193384602.index
 543604246.index
 1731690122.index
 3964067786.index
@@ -54,7 +54,6 @@ INDEX VERSION 1.131+C:\Users\Käyttäjä\eclipse02_serverprogramming\.metadata\.plu
 1030125448.index
 1466103174.index
 1640643055.index
-2008308246.index
 3300494865.index
 495007113.index
 271601180.index

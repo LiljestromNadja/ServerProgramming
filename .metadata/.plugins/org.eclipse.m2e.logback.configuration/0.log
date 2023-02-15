@@ -3006,3 +3006,115 @@ org.eclipse.core.runtime.CoreException: Launch configuration Bookstore02Applicat
 2023-02-15 19:02:36,146 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v3\src\test\resources
 2023-02-15 19:03:27,936 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2023-02-15 19:03:27,979 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:03:27,990 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v3\src\test\resources
+2023-02-15 19:19:42,392 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:19:42,469 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:19:42,480 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v3\src\test\resources
+2023-02-15 19:20:27,172 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: k23:bookstore02:0.0.1-SNAPSHOT @ C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\pom.xml.
+2023-02-15 19:20:29,663 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:20:29,669 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:20:29,692 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:20:31,982 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:20:31,993 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:20:32,020 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:22:28,504 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:22:28,525 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:22:28,532 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:31:45,369 [Worker-48: Launching Bookstore02Application (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:31:45,408 [Worker-48: Launching Bookstore02Application (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:31:45,416 [Worker-48: Launching Bookstore02Application (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:33:18,908 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:33:18,946 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:33:18,960 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:43:06,921 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:43:06,942 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:43:06,953 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:43:11,549 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:43:11,569 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-02-15 19:43:11,579 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:45:30,081 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 19:45:30,084 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:45:30,090 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:45:37,726 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 19:45:37,727 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:45:37,736 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:48:42,172 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 19:48:42,174 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:48:42,183 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:49:10,407 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 19:49:10,408 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:49:10,422 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:51:08,696 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 19:51:08,697 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:51:08,705 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:55:03,958 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 19:55:03,959 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:55:03,968 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:56:40,000 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:56:40,021 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-02-15 19:56:40,031 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 19:57:26,225 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 19:57:26,225 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 19:57:26,233 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:01:07,453 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:01:07,454 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:01:07,465 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:02:16,430 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:02:16,432 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:02:16,441 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:09:10,693 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:09:10,697 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:09:10,705 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:09:56,194 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:09:56,195 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:09:56,205 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:12:28,642 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:12:28,643 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:12:28,649 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:12:54,821 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:12:54,821 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:12:54,831 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:13:29,321 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:13:29,322 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:13:29,331 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:15:52,561 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:15:52,562 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:15:52,569 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:17:35,904 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:17:35,906 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:17:35,916 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:18:40,783 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:18:40,785 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:18:40,792 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:20:16,203 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:20:16,205 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:20:16,215 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:20:35,749 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:20:35,750 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:20:35,757 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:26:42,083 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:26:42,084 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:26:42,095 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:27:38,757 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:27:38,757 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:27:38,790 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:28:38,789 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:28:38,790 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:28:38,798 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:29:46,333 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:29:46,333 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:29:46,339 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:30:35,453 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:30:35,454 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:30:35,468 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:31:05,266 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:31:05,267 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:31:05,276 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:32:06,332 [Worker-68: Launching Bookstore02Application (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:32:06,350 [Worker-68: Launching Bookstore02Application (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-02-15 20:32:06,363 [Worker-68: Launching Bookstore02Application (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:33:50,135 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:33:50,136 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-02-15 20:33:50,147 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-02-15 20:34:13,282 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-02-15 20:34:13,283 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
