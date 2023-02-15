@@ -3,10 +3,12 @@ package k23.bookstore02.web;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import jakarta.validation.Valid;
 import k23.bookstore02.domain.Book;
 import k23.bookstore02.domain.BookRepository;
 import k23.bookstore02.domain.CategoryRepository;
@@ -46,10 +48,18 @@ public class BookController {
 	
 	//Tallennetaan uusi kirja
 	@RequestMapping(value="/save", method = RequestMethod.POST) //tämä käytössä addbook.html :ssä
-	public String save(Book book) {
+	public String save(@Valid Book book, BindingResult bindingResult, Model model) {
+		if (bindingResult.hasErrors()) {
+			System.out.println("Some validation error happened");
+			model.addAttribute("book", book);
+			model.addAttribute("categories", crepository.findAll());
+			return "addbook";
+		}
 		repository.save(book);
 		return "redirect:/booklist";
 	}
+	
+	
 
 	//Poista kirja
 	@RequestMapping(value="/delete/{id}", method=RequestMethod.GET)
