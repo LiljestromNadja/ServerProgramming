@@ -52,14 +52,12 @@ public class BookController {
 		if (bindingResult.hasErrors()) {
 			System.out.println("Some validation error happened");
 			model.addAttribute("book", book);
-			model.addAttribute("categories", crepository.findAll());
+			model.addAttribute("categories", crepository.findAll()); // <---- tämän takia edellinen kaatui, tärkeä
 			return "addbook";
 		}
 		repository.save(book);
 		return "redirect:/booklist";
 	}
-	
-	
 
 	//Poista kirja
 	@RequestMapping(value="/delete/{id}", method=RequestMethod.GET)

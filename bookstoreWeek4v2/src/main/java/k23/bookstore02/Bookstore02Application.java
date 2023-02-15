@@ -1,6 +1,8 @@
 package k23.bookstore02;
 //VAIHDETTU SB versioon 3.0.2 kun näitä tehtäviä tehdessä versiolla 2.7.8. tuli jotain ihme herjoja pom.xml:stä
 
+//Category added
+
 //Opettajalle kysymys, toStringin takia tulee virheilmoitus. (Book.java)
 
 import org.slf4j.Logger;

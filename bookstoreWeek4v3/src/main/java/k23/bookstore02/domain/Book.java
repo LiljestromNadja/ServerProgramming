@@ -6,7 +6,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.validation.*;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -17,7 +16,6 @@ public class Book {
 	
 	@Size(min = 1, max = 30)
 	private String title;
-	
 	private String author, isbn;
 	private int publicationYear;
 	private double price;
