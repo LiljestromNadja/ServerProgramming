@@ -3,6 +3,8 @@ package k23.bookstore02;
 
 //Adding new categories added, addcategory.html added,  categories.html, CategoryController added
 
+//"main"
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -10,6 +12,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import k23.bookstore02.domain.ApplicationUser;
+import k23.bookstore02.domain.ApplicationUserRepository;
 import k23.bookstore02.domain.Book;
 import k23.bookstore02.domain.BookRepository;
 import k23.bookstore02.domain.Category;
@@ -25,7 +29,7 @@ public class Bookstore02Application {
 	}
 	
 	@Bean
-	public CommandLineRunner demo(BookRepository repository, CategoryRepository crepository) {
+	public CommandLineRunner demo(BookRepository repository, CategoryRepository crepository, ApplicationUserRepository urepository) {
 		return(args) ->{
 			
 			Category ykkonen =new Category("IT");
@@ -47,6 +51,13 @@ public class Bookstore02Application {
 			repository.save(kirjakolme);
 			
 			log.info("lisätty kirjat 1,2,3");
+			
+			//Lisätään käyttäjät tietokantaan, admin/admin ja user/user
+			ApplicationUser user1 = new ApplicationUser("user","$2a$10$RIqlxElPXzQKJayHKJwSNOxDMnMh.j.OHwQvOoPj0gld.sbXsqqgK" ,"USER");
+			ApplicationUser user2 = new ApplicationUser("admin", "$2a$10$aGjp6jEUEspwUkQrCbGAWuKScc9DRHTQ6LXMRX2TAM5A6tzHdy8/6", "ADMIN");
+			urepository.save(user1);
+			urepository.save(user2);
+			log.info("Lisätty käyttäjät admin ja user");
 			
 			System.out.println("nouda, fetch");
 			for (Book book : repository.findAll()) {
