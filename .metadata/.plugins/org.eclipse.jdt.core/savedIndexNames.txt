@@ -1,7 +1,5 @@
 INDEX VERSION 1.131+C:\Users\Käyttäjä\eclipse02_serverprogramming\.metadata\.plugins\org.eclipse.jdt.core
-315418256.index
 695710257.index
-544147040.index
 2750901221.index
 2584716744.index
 826818345.index
@@ -38,7 +36,6 @@ INDEX VERSION 1.131+C:\Users\Käyttäjä\eclipse02_serverprogramming\.metadata\.plu
 1538744520.index
 306704749.index
 833469543.index
-3152560189.index
 865321519.index
 3300494865.index
 1640643055.index
@@ -59,12 +56,10 @@ INDEX VERSION 1.131+C:\Users\Käyttäjä\eclipse02_serverprogramming\.metadata\.plu
 2266708722.index
 1802030957.index
 700541994.index
-1659498962.index
 1317038617.index
 1174024515.index
 3533814369.index
 382806760.index
-1413587413.index
 3699311245.index
 2583679109.index
 495007113.index
