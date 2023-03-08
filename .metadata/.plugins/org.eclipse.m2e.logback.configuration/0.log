@@ -3579,3 +3579,10 @@ org.eclipse.core.runtime.CoreException: Launch configuration Bookstore02Applicat
 2023-03-01 17:03:47,515 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek5v3_RestBookController_and_SD_rest\src\test\resources
 2023-03-01 17:03:49,896 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2023-03-01 17:03:49,906 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-03-01 17:03:49,943 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek5v3_RestBookController_and_SD_rest\src\test\resources
+2023-03-01 17:47:19,467 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-01 17:47:19,501 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-03-01 17:47:19,509 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek5v3_RestBookController_and_SD_rest\src\test\resources
+2023-03-01 17:47:42,189 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-03-01 17:47:42,334 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-03-01 17:47:42,347 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek5v3_RestBookController_and_SD_rest\src\test\resources

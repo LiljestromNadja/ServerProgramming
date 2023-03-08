@@ -11,7 +11,7 @@ import jakarta.validation.Valid;
 import k23.bookstore02.domain.Category;
 import k23.bookstore02.domain.CategoryRepository;
 
-@Controller
+@Controller //palauttaa HTML-sivun
 public class CategoryController {
 
 

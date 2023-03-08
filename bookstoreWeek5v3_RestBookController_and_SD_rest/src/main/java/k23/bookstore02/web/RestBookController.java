@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import k23.bookstore02.domain.Book;
 import k23.bookstore02.domain.BookRepository;
 
-@RestController
+@RestController //palauttaa JSONia
 public class RestBookController {
 	
 	private static final Logger log = LoggerFactory.getLogger(RestBookController.class);
