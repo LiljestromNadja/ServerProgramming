@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Booklist</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+<body>
+	<i>You have signed in with username: <b sec:authentication="name"></b>, and your role is: <b sec:authentication="principal.authorities"></b></i>
+        
+	<h1>Books</h1>
+	<table>
+	<tr>
+		<th>Title</th>
+		<th>Author</th>
+		<th>Isbn</th>
+		<th>Year</th>
+		<th>Price</th>
+		<th>Category</th>
+	</tr>
+	<tr th:each = "book : ${books}">   		<!-- MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
+			<td th:text="${book.title}"></td>
+			<td th:text="${book.author}"></td>
+			<td th:text="${book.isbn}"></td>
+			<td th:text="${book.publicationYear}"></td>
+			<td th:text="${book.price}"></td>
+			<td th:text="${book.category.name}"></td>			
+			<!-- <td><a th:href="@{/delete/{id}(id=${book.id})}">Delete</a>	</td> -->
+			<!-- <td><a th:href="@{/editBook/{id}(id=${book.id})}">Edit</a></td>  -->
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/editBook/{id}(id=${book.id})}" class="btn btn-xs btn-danger">Edit</a></td>
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${book.id})}" class="btn btn-xs btn-danger">Delete</a></td>
+					
+	</tr>				
+	</table>
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button>Add Book</button></a>
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/addCategory"><button>Add Category</button></a>
+	
+	<br></br>
+	<a href="/categories"><button>All Categories</button></a>
+	
+	<!--<a href="/add" class="btn btn-primary">Add book</a>-->
+	
+	<div class="col-md-4" style="padding:20px 0">
+		<form th:action="@{/logout}" method="post">
+			<input type="submit" value="Sign Out" class="btn btn-sm btn-danger"/>
+		</form>
+	</div>
+	
+	
+</body>
+</html>

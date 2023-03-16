@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Userlist</title>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+</head>
+<body>
+	<a href="/index"><button>Back to index.html</button></a>
+	<i>You have signed in with username: <b sec:authentication="name"></b>,
+		and your role is: <b sec:authentication="principal.authorities"></b></i>
+
+	<h1>Users</h1>
+	<table>
+		<tr>
+
+			<th>Username</th>
+
+		</tr>
+		<tr th:each="user : ${users}">
+			<!-- MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
+
+
+			<td th:text="${user.username}"></td>
+
+
+		</tr>
+	</table>
+	<br></br>
+
+	<a sec:authorize="hasAuthority('ADMIN')" href="/admin/register"><button>Add
+			user</button></a>
+
+	<div class="col-md-4" style="padding: 20px 0">
+		<form th:action="@{/logout}" method="post">
+			<input type="submit" value="Sign Out" class="btn btn-sm btn-danger" />
+		</form>
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Categories</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<a href="/index"><button>Back to index.html</button></a>
+	<i>You have signed in with username: <b sec:authentication="name"></b>, and your role is: <b sec:authentication="principal.authorities"></b></i>
+    
+	<h1>Categories</h1>
+    <table>
+		<tr>
+		    <th>Category name</th>
+		</tr>  
+    	<tr th:each = "category : ${categories}">
+    		<td th:text="${category.name}"></td>
+    	</tr>
+     </table>
+     <br></br>
+     <a sec:authorize="hasAuthority('ADMIN')" href="/addCategory"><button>Add new Category</button></a>
+     <br></br>
+     <a href="/booklist"><button>Back to Booklist</button></a>
+     <br></br>
+     
+     
+</body>
+</html>

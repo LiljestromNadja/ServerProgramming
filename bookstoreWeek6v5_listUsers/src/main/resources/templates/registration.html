@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add new user</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<a href="/index"><button>Back to index.html</button></a>
+	<i>You have signed in with username: <b sec:authentication="name"></b>, and your role is: <b sec:authentication="principal.authorities"></b></i>
+    
+	<h1>Registration</h1>
+  
+		<form th:object="${newuser}" th:action="@{/admin/saveuser}" action="#" method="post">
+			<div>
+				<label>First name: <input type="text" th:field="*{firstname}" /></label>
+				<p th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}">First name Error</p>	
+			</div>
+			<div>
+				<label>Last name: <input type="text" th:field="*{lastname}" /></label>
+				<p th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">Last name Error</p>	
+			</div>
+			<div>
+				<label>Username: <input type="text" th:field="*{username}" /></label>
+				<p th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username Error</p>	
+			</div>
+			<div>
+				<label> Password: <input type="password" th:field="*{password}" /></label>
+				<p th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>	
+			</div>
+			<div>
+				<label> Re-type Password: <input type="password" th:field="*{passwordCheck}" /></label>
+				<p th:if="${#fields.hasErrors('passwordCheck')}" th:errors="*{passwordCheck}">Password Match Error</p>	
+			</div>
+			
+			<input type="submit" value="Save"></input>		
+		</form>
+<br>
+     
+</body>
+</html>

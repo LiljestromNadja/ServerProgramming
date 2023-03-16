@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div>
+	<i>You have signed in with username: <b sec:authentication="name"></b>, and your role is: <b sec:authentication="principal.authorities"></b></i>
+	<h3>BOOKSTORE</h3>
+	<h3>This is the index page</h3>
+	<a href="/booklist"><button>Go to Booklist</button></a>
+	<a href="/categories"><button>All categories</button></a>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/admin/register"><button>Create a new user</button></a>
+	<a sec:authorize="hasAuthority('ADMIN')" href="/admin/userlist"><button>Go to userlist</button></a><br><br><br>   
+	
+	
+	</div>
+</body>
+</html>
