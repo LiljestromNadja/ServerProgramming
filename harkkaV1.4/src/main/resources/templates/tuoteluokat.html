@@ -1,0 +1,44 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- TYYLi<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Tuoteluokat</title>
+</head>
+<body>
+	<a href="index">Etusivu</a>
+	<h3>Tuoteluokat</h3>
+	
+	<table class="table table-striped">
+		<tr>
+			
+			<th>Tuoteluokka</th>
+		
+		</tr>
+		<tr th:each = "tuoteluokka : ${tuoteluokat}">   		<!-- Sama mikä TuoteControllerissa|th each käy läpi listan |huom MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
+			<td th:text="${tuoteluokka.tuoteluokkanimi}"></td>
+			
+					
+			<td><a th:href="@{/poista/{id}(id=${tuoteluokka.tuoteluokkaid})}">Poista</a></td>  
+			<td><a th:href="@{/muokkaaTuoteluokka/{id}(id=${tuoteluokka.tuoteluokkaid})}">Muokkaa</a></td> 
+			<!-- <td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/editBook/{id}(id=${book.id})}" class="btn btn-xs btn-success btn-sm">Edit</a></td>      -->
+			<!-- <td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${book.id})}" class="btn btn-xs btn-danger btn-sm">Delete</a></td>        -->
+					
+		</tr>				
+	</table>
+	<br></br>
+	<a href="lisaaTuoteluokka">Lisää tuoteluokka</a>
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+<!--  -->

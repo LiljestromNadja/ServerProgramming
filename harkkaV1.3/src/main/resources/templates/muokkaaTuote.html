@@ -1,0 +1,60 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- TYYLi<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Muokkaa tuotetta</title>
+</head>
+<body>
+	<a href="/index">Etusivu</a>
+	<h3>Muokkaa tuotetta</h3>
+	
+	<div>
+	<form th:object="${tuote}" th:action="@{../tallennaTuote}" action="#" method="post"> 	 					<!-- Tässä menee @{/tallennaTuote} -->
+	
+		  	<input type="hidden" id="tuoteid" th:field="*{tuoteid}" />												<!-- muokatessa id:n täytyy mennä mukana backendin puolelle, ettei luoda uutta tuotetta -->
+		  	<div>
+		  	<label>Tuotteen nimi</label>
+			<input type="text" th:field="*{tuotenimi}" />
+			</div>
+			<div>
+		  	<label>Tuotteen sijainti</label>
+		  	<input type="text" th:field="*{sijainti}" />
+			</div>
+			<div>
+		  	<label>Tuotteen kuvaus</label>
+			<input type="text" th:field="*{kuvaus}" />
+			</div>
+			<div>		
+		  	<label>Tuotteen hinta</label>
+			<input type="number" th:field="*{hinta}" />
+			</div>
+			
+			<div style="clear: both; display: block; height: 10px;"></div>						
+		  	<label for="tuoteluokatlistaus">Tuoteluokka</label>
+			 <select id="tuoteluokatlistaus" th:field="*{tuoteluokka}" class="form-control">
+       			<option th:each="tuoteluokka: ${tuoteluokat}" th:value="${tuoteluokka.tuoteluokkaid}" th:text="${tuoteluokka.tuoteluokkanimi}"></option>
+    		</select> 
+			<br>
+			
+			<input type="submit" value="Tallenna muutokset"></input>
+		</form>
+	
+	</div>
+	
+	
+	
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+<!--  -->

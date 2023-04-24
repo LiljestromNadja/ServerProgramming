@@ -1,0 +1,48 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- TYYLi<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Tuotelistaus</title>
+</head>
+<body>
+	<h3>Kaikki tuotteet</h3>
+	
+	<table class="table table-striped">
+		<tr>
+			<th>Tuotteen nimi</th>
+			<th>Tuotteen sijainti</th>
+			<th>Tuotteen kuvaus</th>
+			<th>Tuotteen hinta</th>
+			<th>Tuoteluokka</th>
+		
+		</tr>
+		<tr th:each = "tuote : ${tuotteet}">   		<!-- Sama mikä TuoteControllerissa|th each käy läpi listan |huom MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
+			<td th:text="${tuote.tuotenimi}"></td>
+			<td th:text="${tuote.sijainti}"></td>
+			<td th:text="${tuote.kuvaus}"></td>
+			<td th:text="${tuote.hinta}"></td>
+			<td th:text="${tuote.tuoteluokka.tuoteluokkanimi}"></td>
+					
+			<!-- <td><a th:href="@{/delete/{id}(id=${book.id})}">Delete</a>	</td> -->
+			<!-- <td><a th:href="@{/editBook/{id}(id=${book.id})}">Edit</a></td>  -->
+			<!-- <td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/editBook/{id}(id=${book.id})}" class="btn btn-xs btn-success btn-sm">Edit</a></td>      -->
+			<!-- <td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${book.id})}" class="btn btn-xs btn-danger btn-sm">Delete</a></td>        -->
+					
+		</tr>				
+	</table>
+	
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+<!--  -->

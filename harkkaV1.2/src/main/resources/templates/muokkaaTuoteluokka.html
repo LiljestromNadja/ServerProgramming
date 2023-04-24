@@ -1,0 +1,42 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- TYYLi<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Muokkaa tuoteluokkaa</title>
+</head>
+<body>
+	<a href="/index">Etusivu</a>
+	<h3>Muokkaa tuoteluokkaa</h3>
+	
+	<div>
+	<form th:object="${tuoteluokka}" th:action="@{../tallennaTuoteluokka}" action="#" method="post"> 	 					<!-- Tässä menee @{/tallennaTuoteluokka} -->
+	
+		  	<input type="hidden" id="tuoteluokkaid" th:field="*{tuoteluokkaid}" />												<!-- muokatessa id:n täytyy mennä mukana backendin puolelle, ettei luoda uutta tuoteluokkaa -->
+		  	<div>
+		  	<label>Tuoteluokan nimi</label>
+			<input type="text" th:field="*{tuoteluokkanimi}" />
+			</div>
+			
+			
+			<input type="submit" value="Tallenna muutokset"></input>
+		</form>
+	
+	</div>
+	
+	
+	
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+<!--  -->

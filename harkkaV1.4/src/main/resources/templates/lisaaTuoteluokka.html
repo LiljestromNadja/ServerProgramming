@@ -1,0 +1,38 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- TYYLi<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Lisää tuote</title>
+</head>
+<body>
+	<a href="index">Etusivu</a>
+	<h3>Lisää tuoteluokka</h3>
+	
+	<div>
+		<form th:object="${tuoteluokka}" th:action="@{tallennaTuoteluokka}" action="#" method="post"> <!-- Viedään "@{tallennaTuote}"endpointiin  -->
+		  	<label for="tuotenimi">Tuoteluokan nimi</label>
+			<input type="text" id="tuoteluokkanimi" th:field="*{tuoteluokkanimi}" />
+			<div th:if="${#fields.hasErrors('tuoteluokkanimi')}" th:errors="*{tuoteluokkanimi}">Virhe!</div>
+			<div style="clear: both; display: block; height: 10px;"></div>
+			
+		  	
+			
+			<input type="submit" value="Tallenna"></input>
+		</form>
+	</div>
+	
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+<!--  -->
