@@ -13,7 +13,7 @@ CREATE TABLE tuoteluokka
 
 
 INSERT INTO tuoteluokka (tuoteluokkanimi) 
-VALUES ("Elektroniikka"),
+VALUES ("Elektroniikka")
 ,("Kodinkoneet")
 ,("Sisustus")
 , ("Huonekalut");
@@ -43,8 +43,8 @@ CREATE TABLE application_user
 , firstname VARCHAR(100) NOT NULL
 , lastname VARCHAR(100) NOT NULL
 ,username VARCHAR(250) NOT NULL
-,password_hash VARCHAR(250) NOT NULL)
-, role  VARCHAR(100) NOT NULL;
+,password_hash VARCHAR(250) NOT NULL
+, role  VARCHAR(100) NOT NULL);
 INSERT INTO application_user (firstname, lastname, username, password_hash, role) 
 VALUES ("","","user","$2a$10$RIqlxElPXzQKJayHKJwSNOxDMnMh.j.OHwQvOoPj0gld.sbXsqqgK" ,"USER"),
 ("", "", "admin", "$2a$10$aGjp6jEUEspwUkQrCbGAWuKScc9DRHTQ6LXMRX2TAM5A6tzHdy8/6", "ADMIN"), 
