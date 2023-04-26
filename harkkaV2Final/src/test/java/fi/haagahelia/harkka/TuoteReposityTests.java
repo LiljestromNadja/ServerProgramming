@@ -11,6 +11,7 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import fi.haagahelia.harkka.domain.Tuote;
@@ -18,7 +19,8 @@ import fi.haagahelia.harkka.domain.TuoteRepository;
 import fi.haagahelia.harkka.domain.Tuoteluokka;
 import fi.haagahelia.harkka.domain.TuoteluokkaRepository;
 
-@DataJpaTest
+@DataJpaTest //H2
+@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE) //MariaDB
 public class TuoteReposityTests {
 	
 	@Autowired
@@ -57,13 +59,14 @@ public class TuoteReposityTests {
 	}
 	
 	
-	
+
+	//tuotenimi, sijainti, kuvaus, hinta, tuoteluokka
 	
 	@Test
 	public void lisaaTuote() {
-		Tuote tuote = new Tuote();
+		Tuote tuote = new Tuote("Testi", "Testi", "Testi", 25.00, tuoteluokkarepository.findByTuoteluokkanimi("Elektroniikka").get(0) );
 		tuoterepository.save(tuote);
-		assertNotEquals(tuote.getTuoteid(),null);
+		assertEquals(tuote.getTuotenimi(),"Testi");
 	}
 	
 

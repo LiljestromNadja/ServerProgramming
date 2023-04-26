@@ -6942,3 +6942,101 @@ org.eclipse.core.runtime.CoreException: Launch configuration HarkkaApplication (
 2023-04-26 17:05:18,752 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
 2023-04-26 17:18:49,189 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-04-26 17:18:49,189 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 17:18:49,198 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-26 17:34:48,852 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-27 00:53:46,473 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-27 00:54:43,094 [Worker-13: Launching RestinTesti (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:54:43,170 [Worker-13: Launching RestinTesti (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-27 00:54:43,425 [Worker-13: Launching RestinTesti (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-27 00:55:01,045 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-27 00:55:01,045 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-27 00:55:01,047 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-04-27 00:55:01,096 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2023-04-27 00:55:01,236 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-27 00:55:01,236 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-27 00:55:01,237 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\HelloAppWeek2\src\test\resources
+2023-04-27 00:55:13,518 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-27 00:55:13,518 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-27 00:55:13,519 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-04-27 00:55:13,525 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-04-27 00:55:13,553 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-27 00:55:13,554 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-04-27 00:55:13,554 [Worker-0: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\ServerProgrammingWeek1-2\src\test\resources
+2023-04-27 00:55:16,887 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:17,208 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-04-27 00:55:17,314 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek3\src\test\resources
+2023-04-27 00:55:20,160 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:20,171 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-04-27 00:55:20,278 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v2\src\test\resources
+2023-04-27 00:55:22,489 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:22,497 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 4 resources
+2023-04-27 00:55:22,568 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v3\src\test\resources
+2023-04-27 00:55:25,369 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:25,381 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-04-27 00:55:25,426 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek4v4\src\test\resources
+2023-04-27 00:55:28,253 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:28,263 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-04-27 00:55:28,326 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek5v1_RestBookController\src\test\resources
+2023-04-27 00:55:30,254 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:30,296 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-04-27 00:55:30,358 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek5v2_Spring_data_rest\src\test\resources
+2023-04-27 00:55:32,442 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:32,452 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-04-27 00:55:32,558 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek5v3_RestBookController_and_SD_rest\src\test\resources
+2023-04-27 00:55:35,754 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:35,765 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-04-27 00:55:35,970 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek6v1_SpringSecurity\src\test\resources
+2023-04-27 00:55:37,961 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:37,969 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-04-27 00:55:38,013 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek6v2_login_and_adminRole\src\test\resources
+2023-04-27 00:55:41,117 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:41,127 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 6 resources
+2023-04-27 00:55:41,405 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek6v3_whiteListUrls\src\test\resources
+2023-04-27 00:55:43,986 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:43,998 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 7 resources
+2023-04-27 00:55:44,321 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek6v4_addingUsers\src\test\resources
+2023-04-27 00:55:46,598 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:46,629 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 8 resources
+2023-04-27 00:55:47,080 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek6v5_listUsers\src\test\resources
+2023-04-27 00:55:49,617 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:49,625 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 28 resources
+2023-04-27 00:55:49,997 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\bookstoreWeek6v6_style_added\src\test\resources
+2023-04-27 00:55:52,356 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:52,429 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 21 resources
+2023-04-27 00:55:52,620 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkka\src\test\resources
+2023-04-27 00:55:55,046 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:55,054 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 27 resources
+2023-04-27 00:55:55,446 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.2\src\test\resources
+2023-04-27 00:55:58,036 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:55:58,043 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 27 resources
+2023-04-27 00:55:58,351 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.3\src\test\resources
+2023-04-27 00:56:02,629 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:56:02,639 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 27 resources
+2023-04-27 00:56:03,001 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.4\src\test\resources
+2023-04-27 00:56:05,115 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:56:05,129 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 29 resources
+2023-04-27 00:56:05,548 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.5\src\test\resources
+2023-04-27 00:56:07,974 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:56:07,997 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 29 resources
+2023-04-27 00:56:08,165 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.6\src\test\resources
+2023-04-27 00:56:10,529 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:56:10,539 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-27 00:56:10,735 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-27 00:56:13,483 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:56:13,495 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-27 00:56:14,036 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-27 00:56:17,987 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-27 00:56:18,402 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-27 00:56:19,833 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-27 00:59:38,460 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 00:59:38,465 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 00:59:38,473 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-27 01:01:41,486 [Worker-15: Launching TuoteReposityTests (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 01:01:41,518 [Worker-15: Launching TuoteReposityTests (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 01:01:41,524 [Worker-15: Launching TuoteReposityTests (1)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-27 01:02:09,938 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 01:02:09,939 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 01:02:09,947 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-27 01:06:40,805 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 01:06:40,809 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-27 01:06:40,816 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
