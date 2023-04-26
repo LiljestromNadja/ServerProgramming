@@ -41,7 +41,7 @@ public class UserRegistrationController {
 
 		log.info("saveuser: newUser is " + newUser.toString());
 		if (!bindingResult.hasErrors()) { // validation errors
-			if (newUser.getPassword().equals(newUser.getPasswordCheck())) { // check password match
+			if (newUser.getPassword().equals(newUser.getPasswordCheck())) { // tarkistetaan täsmäävätkö salasanat
 				String pwd = newUser.getPassword();
 				BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
 				String hashPwd = bc.encode(pwd);
@@ -50,7 +50,7 @@ public class UserRegistrationController {
 				newAppUser.setPasswordHash(hashPwd);
 				newAppUser.setUsername(newUser.getUsername());
 				newAppUser.setRole("USER");
-				if (regUserRepository.findByUsername(newUser.getUsername()) == null) { // Check if user exists
+				if (regUserRepository.findByUsername(newUser.getUsername()) == null) { // onko käyttäjänimi jo käytössä
 					regUserRepository.save(newAppUser);
 				} else {
 					log.info("username already exists");

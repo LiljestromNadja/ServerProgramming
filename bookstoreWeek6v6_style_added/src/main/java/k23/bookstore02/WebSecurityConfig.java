@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -13,7 +14,8 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import k23.bookstore02.web.UserDetailServiceImpl;
 
 @Configuration
-@EnableWebSecurity
+@EnableWebSecurity // pystyy poistamaan selaimessa localhost:8080/delete/1
+//@EnableMethodSecurity(securedEnabled = true) //tämä käyttöön harjoitustyössä.
 public class WebSecurityConfig {
     @Autowired
     private UserDetailServiceImpl userDetailsService;

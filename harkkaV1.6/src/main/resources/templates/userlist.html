@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+<title>Käyttäjät</title>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+</head>
+<body>
+		<div>
+
+		<a href="/index"><button class="text-left btn btn-light btn-sm">Etusivulle</button></a> 
+		
+	</div>
+
+	<div class="text-right">
+		<i>Olet kirjautunut käyttäjänä: <b sec:authentication="name"></b>, ja käyttäjäroolisi on: <b sec:authentication="principal.authorities"></b></i>
+		</br>
+		<form class="text-right" th:action="@{/logout}" method="post">
+			<input type="submit" value="Kirjaudu ulos" class="btn btn-sm btn-dark" />
+		</form>
+
+	</div>
+	
+	<div>
+	<h3>Käyttäjät</h3>
+	</div>
+	<br>	
+	<table class="table table-hover" >
+		<tr>
+
+			<th>Käyttäjänimi</th>
+			<th>Käyttäjän rooli</th>
+
+		</tr>
+		<tr th:each="user : ${users}">			<!-- MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
+
+
+		<td th:text="${user.username}"></td>
+		<td th:text="${user.role}"></td>
+		
+		<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/poistakayttaja/{id}(id=${user.id})}" class="btn btn-xs btn-danger btn-sm">Poista</a></td>  
+
+
+		</tr>
+	</table>
+	<br></br>
+
+	<a sec:authorize="hasAuthority('ADMIN')" href="/register"><button>Lisää käyttäjä</button></a>
+
+
+
+
+
+
+</body>
+</html>
