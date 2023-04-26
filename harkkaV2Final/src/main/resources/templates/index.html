@@ -1,0 +1,44 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>index</title>
+	</head>
+	<body>
+		<div class="text-right">
+		<p class="text-right ">
+			<i>Olet kirjautunut käyttäjänä: <b sec:authentication="name"></b>,
+				ja käyttäjäroolisi on: <b sec:authentication="principal.authorities"></b></i>
+		</p>
+
+
+		<form th:action="@{/logout}" method="post">
+			<input type="submit" value="Kirjaudu ulos" class="btn btn-sm btn-dark" />
+		</form>
+	</div>
+
+
+	<div>
+		<h3>Nettikirppis - Etusivu/index</h3>
+		
+	</div>
+
+	<br></br>
+	<div>
+		<a href="/tuotelista"><button type="button" class="btn btn-light">Listaa tuotteet</button></a> 
+		<a href="/tuoteluokat"><button type="button" class="btn btn-light">Listaa tuoteryhmät</button></a> 
+		<a sec:authorize="hasAuthority('ADMIN')" href="/lisaaTuote"><button	type="button" class="btn btn-light">Lisää uusi tuote</button></a> 
+		<a sec:authorize="hasAuthority('ADMIN')" href="/lisaaTuoteluokka"><button type="button" class="btn btn-light">Lisää uusi tuoteryhmä</button></a>
+		<a sec:authorize="hasAuthority('ADMIN')" href="/register"><button type="button" class="btn btn-light">Luo uusi käyttäjä</button></a>
+		<a sec:authorize="hasAuthority('ADMIN')" href="/userlist"><button type="button" class="btn btn-light">Listaa käyttäjät</button></a>
+		
+	</div>
+
+	</body>
+</html>
+
+
+<!--  -->

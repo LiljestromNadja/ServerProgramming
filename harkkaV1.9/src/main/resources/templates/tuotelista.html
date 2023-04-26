@@ -1,0 +1,70 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Tuotelistaus</title>
+</head>
+<body>
+		<div>
+
+		<a href="/index"><button class="text-left btn btn-light btn-sm">Etusivulle</button></a> 
+		<a href="/tuotelista"><button class="text-left btn btn-light btn-sm">Kaikki tuotteet</button></a>
+		<a href="/tuoteluokat"><button class="text-left btn btn-light btn-sm">Tuoteryhmät</button></a>
+
+	</div>
+
+	<div class="text-right">
+		<i>Olet kirjautunut käyttäjänä: <b sec:authentication="name"></b>, ja käyttäjäroolisi on: <b sec:authentication="principal.authorities"></b></i>
+		</br>
+		<form class="text-right" th:action="@{/logout}" method="post">
+			<input type="submit" value="Kirjaudu ulos" class="btn btn-sm btn-dark" />
+		</form>
+
+	</div>
+	
+	<div>
+	<h3>Kaikki tuotteet</h3>
+	</div>
+	<br>
+	
+	<table class="table table-striped">
+		<tr>
+			<th>Tuotteen nimi</th>
+			<th>Tuotteen sijainti</th>
+			<th>Tuotteen kuvaus</th>
+			<th>Tuotteen hinta</th>
+			<th>Tuoteluokka</th>
+		
+		</tr>
+		<tr th:each = "tuote : ${tuotteet}">   		<!-- Sama mikä TuoteControllerissa|th each käy läpi listan |huom MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
+			<td th:text="${tuote.tuotenimi}"></td>
+			<td th:text="${tuote.sijainti}"></td>
+			<td th:text="${tuote.kuvaus}"></td>
+			<td th:text="${tuote.hinta}"></td>
+			<td th:text="${tuote.tuoteluokka.tuoteluokkanimi}"></td>
+					
+			
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/muokkaaTuote/{id}(id=${tuote.tuoteid})}" class="btn btn-xs btn-success btn-sm">Muokkaa</a></td>      
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/delete/{id}(id=${tuote.tuoteid})}" class="btn btn-xs btn-danger btn-sm">Poista</a></td>        
+					
+		</tr>				
+	</table>
+	<br></br>
+	<a sec:authorize="hasAuthority('ADMIN')" href="/lisaaTuote"><button	type="button" class="btn btn-light">Lisää uusi tuote</button></a> 
+	<!--<a href="lisaaTuote">Lisää tuote</a> -->
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+			<!--<td><a th:href="@{/delete/{id}(id=${tuote.tuoteid})}">Poista</a></td>
+			<td><a th:href="@{/muokkaaTuote/{id}(id=${tuote.tuoteid})}">Muokkaa</a></td>  -->

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+    <title>Lisää käyttäjä</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<a href="/index"><button class="text-left btn btn-light btn-sm">Etusivulle</button></a>
+	<div class="text-right">
+		<i>Olet kirjautunut käyttäjänä: <b sec:authentication="name"></b>, ja käyttäjäroolisi on: <b sec:authentication="principal.authorities"></b></i>
+		</br>
+		<form class="text-right" th:action="@{/logout}" method="post">
+			<input type="submit" value="Kirjaudu ulos" class="btn btn-sm btn-dark" />
+		</form>
+	</div>
+	<h3>Luo uusi käyttäjä</h3>
+	<br>
+	<div>
+		<form th:object="${newuser}" th:action="@{/saveuser}" action="#" method="post">
+			<div>
+				<label>Etunimi: <input type="text" th:field="*{firstname}" /></label>
+				<p th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}">First name Error</p>	
+			</div>
+			<div>
+				<label>Sukunimi: <input type="text" th:field="*{lastname}" /></label>
+				<p th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">Last name Error</p>	
+			</div>
+			<div>
+				<label>Käyttäjänimi: <input type="text" th:field="*{username}" /></label>
+				<p th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username Error</p>	
+			</div>
+			<div>
+				<label> Salasana: <input type="password" th:field="*{password}" /></label>
+				<p th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</p>	
+			</div>
+			<div>
+				<label> Salasana uudelleen: <input type="password" th:field="*{passwordCheck}" /></label>
+				<p th:if="${#fields.hasErrors('passwordCheck')}" th:errors="*{passwordCheck}">Password Match Error</p>	
+			</div>
+			
+			<br>
+			
+			<input type="submit" value="Tallenna uusi käyttäjä"></input>		
+		</form>
+		</div>
+<br>
+     
+</body>
+</html>

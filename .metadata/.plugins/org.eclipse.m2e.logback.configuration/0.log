@@ -6723,3 +6723,219 @@ org.eclipse.core.runtime.CoreException: Launch configuration HarkkaApplication (
 2023-04-26 01:55:52,702 [Worker-560: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
 2023-04-26 02:13:20,651 [Worker-569: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
 2023-04-26 02:13:20,652 [Worker-569: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 02:13:20,659 [Worker-569: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:16:36,964 [Worker-573: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration HarkkaApplication (6) references non-existing project harkkaV1.7.
+org.eclipse.core.runtime.CoreException: Launch configuration HarkkaApplication (6) references non-existing project harkkaV1.7.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861) ~[na:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1736) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:401) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2023-04-26 14:16:36,975 [Worker-573: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration HarkkaApplication (6) references non-existing project harkkaV1.7.
+org.eclipse.core.runtime.CoreException: Launch configuration HarkkaApplication (6) references non-existing project harkkaV1.7.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861) ~[na:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1736) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:523) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:411) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:402) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2023-04-26 14:16:37,086 [Worker-573: Updating Maven Dependencies] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration HarkkaApplication (6) references non-existing project harkkaV1.7.
+org.eclipse.core.runtime.CoreException: Launch configuration HarkkaApplication (6) references non-existing project harkkaV1.7.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1861) ~[na:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1736) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:62) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:48) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:225) ~[na:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) ~[org.eclipse.equinox.common_3.16.100.v20220315-2327.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2128) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:376) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:259) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:229) ~[na:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:187) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:403) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:427) ~[na:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:134) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:806) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:972) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:148) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:83) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.0.v20220512-1935.jar:na]
+2023-04-26 14:16:59,101 [Worker-576: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fi.haagahelia:harkka:0.0.1-SNAPSHOT @ C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\pom.xml.
+2023-04-26 14:17:11,359 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:17:11,365 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 29 resources
+2023-04-26 14:17:11,501 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:17:14,405 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:17:14,425 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 29 resources
+2023-04-26 14:17:14,590 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:17:43,754 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 14:17:43,755 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:17:43,763 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:18:34,462 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:18:34,478 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 14:18:34,635 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:18:47,392 [Worker-574: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 14:18:47,393 [Worker-574: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:18:47,399 [Worker-574: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:25:47,396 [Worker-574: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:25:47,442 [Worker-574: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 14:25:47,476 [Worker-574: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:25:55,416 [Worker-578: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:25:55,439 [Worker-578: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 14:25:55,463 [Worker-578: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:57:39,630 [Worker-585: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:57:39,658 [Worker-585: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 14:57:39,731 [Worker-585: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:58:04,034 [Worker-583: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:58:04,057 [Worker-583: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 14:58:04,086 [Worker-583: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:58:06,593 [Worker-585: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:58:06,631 [Worker-585: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 14:58:06,661 [Worker-585: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:58:14,165 [Worker-579: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 14:58:14,165 [Worker-579: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:58:14,171 [Worker-579: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 14:58:48,721 [Worker-583: Launching HarkkaApplication (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 14:58:48,764 [Worker-583: Launching HarkkaApplication (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 14:58:48,797 [Worker-583: Launching HarkkaApplication (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:03:07,796 [Worker-589: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 15:03:07,797 [Worker-589: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:03:07,804 [Worker-589: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:20:15,788 [Worker-587: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:20:15,810 [Worker-587: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:20:15,839 [Worker-587: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:22:33,002 [Worker-595: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:22:33,049 [Worker-595: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:22:33,081 [Worker-595: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:24:29,238 [Worker-584: Launching HarkkaApplication (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:24:29,269 [Worker-584: Launching HarkkaApplication (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:24:29,296 [Worker-584: Launching HarkkaApplication (6)] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:25:32,120 [Worker-596: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:25:32,144 [Worker-596: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:25:32,193 [Worker-596: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:26:42,711 [Worker-596: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:26:42,734 [Worker-596: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:26:42,766 [Worker-596: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:29:24,505 [Worker-601: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:29:24,532 [Worker-601: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:29:24,562 [Worker-601: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:32:53,245 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-04-26 15:35:36,201 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:35:36,361 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:35:36,443 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:40:14,123 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:40:14,159 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:40:14,215 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:43:10,234 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:43:10,262 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:43:10,319 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:45:32,371 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:45:32,398 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:45:32,438 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:49:26,679 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:49:26,712 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:49:26,768 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.7\src\test\resources
+2023-04-26 15:49:43,775 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fi.haagahelia:harkka:0.0.1-SNAPSHOT @ C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\pom.xml.
+2023-04-26 15:49:48,124 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:49:48,149 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:49:48,341 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 15:49:53,782 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:49:53,795 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:49:54,008 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 15:58:01,294 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:58:01,320 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:58:01,372 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 15:58:50,038 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:58:50,071 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:58:50,106 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 15:59:45,561 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 15:59:45,589 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 15:59:45,623 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 16:01:23,740 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:01:23,763 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:01:23,797 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 16:01:32,743 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:01:32,778 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:01:32,812 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 16:05:19,201 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:05:19,225 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:05:19,269 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 16:05:32,710 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fi.haagahelia:harkka:0.0.1-SNAPSHOT @ C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\pom.xml.
+2023-04-26 16:05:35,469 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:05:35,475 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:05:35,631 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-26 16:05:39,476 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:05:39,499 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:05:39,729 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-26 16:09:17,710 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fi.haagahelia:harkka:0.0.1-SNAPSHOT @ C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\pom.xml.
+2023-04-26 16:09:19,924 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 16:09:19,926 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 16:09:19,937 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-26 16:09:24,984 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:09:25,005 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:09:25,221 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-26 16:12:58,944 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:12:58,963 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 16:12:58,968 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-26 16:16:07,728 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:16:07,758 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:16:07,829 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-26 16:19:27,399 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource
+2023-04-26 16:19:27,400 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:19:27,407 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 16:23:29,567 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 16:23:29,592 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 16:23:29,627 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.8\src\test\resources
+2023-04-26 17:00:00,864 [Worker-36: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: fi.haagahelia:harkka:0.0.1-SNAPSHOT @ C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\pom.xml.
+2023-04-26 17:00:04,807 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 17:00:04,812 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 17:00:04,972 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-26 17:00:07,847 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 17:00:07,868 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 17:00:08,046 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-26 17:00:31,854 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 17:00:31,891 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 17:00:31,925 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV1.9\src\test\resources
+2023-04-26 17:02:05,470 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 17:02:05,513 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 17:02:05,596 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-26 17:04:53,844 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 17:04:53,892 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2023-04-26 17:04:53,925 [Worker-37: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Käyttäjä\eclipse02_serverprogramming\harkkaV2Final\src\test\resources
+2023-04-26 17:05:18,681 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2023-04-26 17:05:18,719 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources

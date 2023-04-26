@@ -1,0 +1,60 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Muokkaa tuoteryhmää</title>
+</head>
+<body>
+	<div class="text-right">
+
+		<a href="/index"><button class="text-left btn btn-light btn-sm">Etusivulle</button></a> 
+		<a href="/tuotelista"><button class="text-left btn btn-light btn-sm">Kaikki tuotteet</button></a>
+		<a href="/tuoteluokat"><button class="text-left btn btn-light btn-sm">Tuoteryhmät</button></a>
+
+	</div>
+
+	<div class="text-right">
+		<i>Olet kirjautunut käyttäjänä: <b sec:authentication="name"></b>, ja käyttäjäroolisi on: <b sec:authentication="principal.authorities"></b></i>
+		</br>
+		<form class="text-right" th:action="@{/logout}" method="post">
+			<input type="submit" value="Kirjaudu ulos" class="btn btn-sm btn-dark" />
+		</form>
+
+	</div>
+	
+	<div>
+	<h3>Muokkaa tuoteryhmää</h3>
+	</div>
+	<br>
+	<div>
+	<form th:object="${tuoteluokka}" th:action="@{../tallennaTuoteluokka}" action="#" method="post"> 	 					<!-- Tässä menee @{/tallennaTuoteluokka} -->
+	
+		  	<input type="hidden" id="tuoteluokkaid" th:field="*{tuoteluokkaid}" />												<!-- muokatessa id:n täytyy mennä mukana backendin puolelle, ettei luoda uutta tuoteluokkaa -->
+		  	<div>
+		  	<label>Tuoteluokan nimi</label>
+			<input type="text" th:field="*{tuoteluokkanimi}" />
+			</div>
+			
+			<br>
+			<input  type="submit" value="Tallenna muutokset"></input>
+		</form>
+	
+	</div>
+	
+	
+	
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+<!--  -->

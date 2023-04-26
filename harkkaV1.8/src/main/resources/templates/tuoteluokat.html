@@ -1,0 +1,65 @@
+<!-- View -->
+<!-- Tyyli bootstrap 4.0, ladattu ja kopioitu kansioon src/main/resources/static -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" /> <!-- Lisättiin tyyli, bootstrap 4.0 -->
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+	<title>Tuoteryhmät</title>
+</head>
+<body>
+<div>
+
+		<a href="/index"><button class="text-left btn btn-light btn-sm">Etusivulle</button></a> 
+		<a href="/tuotelista"><button class="text-left btn btn-light btn-sm">Kaikki tuotteet</button></a>
+		<a href="/tuoteluokat"><button class="text-left btn btn-light btn-sm">Tuoteryhmät</button></a>
+
+	</div>
+
+	<div class="text-right">
+		<i>Olet kirjautunut käyttäjänä: <b sec:authentication="name"></b>, ja käyttäjäroolisi on: <b sec:authentication="principal.authorities"></b></i>
+		</br>
+		<form class="text-right" th:action="@{/logout}" method="post">
+			<input type="submit" value="Kirjaudu ulos" class="btn btn-sm btn-dark" />
+		</form>
+
+	</div>
+	
+	<div>
+	<h3>Tuoteryhmät</h3>
+	</div>
+	<br>
+	
+
+	
+	<table class="table table-striped">
+		<tr>
+			
+			<th>Tuoteluokka</th>
+		
+		</tr>
+		<tr th:each = "tuoteluokka : ${tuoteluokat}">   		<!-- Sama mikä TuoteControllerissa|th each käy läpi listan |huom MUISTA DOLLARIT, muuten voi mennä tovi jos toinenkin ihmettelyyn-->
+			<td th:text="${tuoteluokka.tuoteluokkanimi}"></td>
+			
+					
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/muokkaaTuoteluokka/{id}(id=${tuoteluokka.tuoteluokkaid})}" class="btn btn-xs btn-success btn-sm">Muokkaa</a></td>    
+			<td sec:authorize="hasAuthority('ADMIN')"><a th:href="@{/poista/{id}(id=${tuoteluokka.tuoteluokkaid})}" class="btn btn-xs btn-danger btn-sm">Poista</a></td>        
+					
+		</tr>				
+	</table>
+	<br></br>
+	<a sec:authorize="hasAuthority('ADMIN')" href="/lisaaTuoteluokka"><button type="button" class="btn btn-light">Lisää uusi tuoteryhmä</button></a><br>
+		
+	
+	<!-- 
+	<br></br>
+	
+	<a sec:authorize="hasAuthority('ADMIN')" href="/add"><button class="btn btn-success">Add new Book</button></a>
+	<br></br>   
+	 -->	
+
+</body>
+</html>
+
+
+<!--  -->

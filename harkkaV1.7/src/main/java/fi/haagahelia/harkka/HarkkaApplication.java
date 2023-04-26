@@ -2,20 +2,16 @@ package fi.haagahelia.harkka;
 /***
  * Harkka v1.7
  * 
- * - luotu mariadb harkkatietokanta -tietokanta (script harkkatietokantaDBSchema.sql)
+ * - luotu mariadb harkkadatabase -tietokanta (script harkkaDBSchema.sql)
  * - tietokannan käyttäjä/salasana root/root
- * 
- * - päivitetty pom.xml (mariadb depedency)
  * 
  * - päivitetty @GeneratedValue(strategy = GenerationType.AUTO) -> -@GeneratedValue(strategy = GenerationType.IDENTITY) tietokantaa varten
  * 
- * - päivitetty application properties
- * - päivitetty HarkkaApplication.java
+ * - muokattu ApplicationUser.java
+ * - muokattu ApplicationUserRegistrationController.java
  * 
  * 
- * 
- * 
- * **********************************************************************************************************
+ * ***********************************************************************************************
  * Harkka v1.6
  * 
  * -JUnit
@@ -24,7 +20,7 @@ package fi.haagahelia.harkka;
  * -TuoteRepositoryTests.java
  * -RestinTesti.java 
  * 
- * *********************************************************************************************************
+ * ***********************************************************************************************
  * Harkka v1.5
  * 
  * Luotu package fi.haagahelia.service ja siirretty UserDetailServiceImpl.java sinne
@@ -120,14 +116,12 @@ import fi.haagahelia.harkka.domain.TuoteluokkaRepository;
 @SpringBootApplication
 public class HarkkaApplication {
 	
-	//v1.7// private static final Logger log = LoggerFactory.getLogger(HarkkaApplication.class); 
+	private static final Logger log = LoggerFactory.getLogger(HarkkaApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(HarkkaApplication.class, args);
 	}
-	/*
-	 * v1.7 ulkoinen tietokanta otettu käyttöön, nämä lisätään kantaan scriptissä (harkkaDBSchema.sql)
-	 * jos h2 kanta otetaan takaisin käyttöön, muita päivittää application.properties
+	
 	@Bean
 	public CommandLineRunner demo(TuoteRepository tuoterepository, TuoteluokkaRepository tuoteluokkarepository, ApplicationUserRepository urepository) {
 		return(args) ->{
@@ -147,7 +141,7 @@ public class HarkkaApplication {
 			log.info("LISÄTTY TIETOKANTAAN TUOTELUOKAT: " + elektroniikka +", " + isotkkoneet + ", " + huonekalut + ", " + sisustus);
 			
 			
-			//Luodaan
+			//Luodaan 
 			Tuote tuote1 = new Tuote("Rannekello", "Helsinki", "Hieno digitaalinen rannekello", 25.00, tuoteluokkarepository.findByTuoteluokkanimi("Elektroniikka").get(0) );
 			Tuote tuote2 = new Tuote("Kuulokkeet", "Helsinki", "Langattomat pelikuulokkeet mikrofonilla, OVH 120 €.", 40.00, tuoteluokkarepository.findByTuoteluokkanimi("Elektroniikka").get(0));
 			Tuote tuote3 = new Tuote("Pyykinpesukone", "Vantaa", "Candy-merkkinen päältä täytettävä pyykinpesukone, 7kg rumpu.", 120, tuoteluokkarepository.findByTuoteluokkanimi("Kodinkoneet").get(0));
@@ -167,15 +161,16 @@ public class HarkkaApplication {
 			
 			//v1.4
 			//Luodaan ja lisätään käyttäjät tietokantaan, admin/admin ja user/user, huolto/huolto
-			ApplicationUser user1 = new ApplicationUser("user","$2a$10$RIqlxElPXzQKJayHKJwSNOxDMnMh.j.OHwQvOoPj0gld.sbXsqqgK" ,"USER");
-			ApplicationUser user2 = new ApplicationUser("admin", "$2a$10$aGjp6jEUEspwUkQrCbGAWuKScc9DRHTQ6LXMRX2TAM5A6tzHdy8/6", "ADMIN");
-			ApplicationUser user3 = new ApplicationUser("huolto", "$2a$10$lDtQP3VTBBHPocsCga.a6.iqXrQq2S3.nlaWJieniRwYlOUjpttUS", "ADMIN");
+			//firstname, lastname, username, pwhash, role
+			ApplicationUser user1 = new ApplicationUser("Pentti","Peruskäyttäjä","user","$2a$10$RIqlxElPXzQKJayHKJwSNOxDMnMh.j.OHwQvOoPj0gld.sbXsqqgK" ,"USER");
+			ApplicationUser user2 = new ApplicationUser("admin","admin","admin", "$2a$10$aGjp6jEUEspwUkQrCbGAWuKScc9DRHTQ6LXMRX2TAM5A6tzHdy8/6", "ADMIN");
+			ApplicationUser user3 = new ApplicationUser("iiro","it-tuki","huolto", "$2a$10$lDtQP3VTBBHPocsCga.a6.iqXrQq2S3.nlaWJieniRwYlOUjpttUS", "ADMIN");
 			urepository.save(user1);
 			urepository.save(user2);
 			urepository.save(user3);
 			log.info("Lisätty käyttäjät admin, user, huolto");
 		};
 		
-	}*/
+	}
 
 }
